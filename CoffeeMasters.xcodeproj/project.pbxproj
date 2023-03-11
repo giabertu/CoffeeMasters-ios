@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1C2E8629BCA8AB0083BD78 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1C2E8529BCA8AB0083BD78 /* Offer.swift */; };
 		0F49F62229B8E971004BD4EC /* CoffeeMastersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F49F62129B8E971004BD4EC /* CoffeeMastersApp.swift */; };
 		0F49F62429B8E971004BD4EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F49F62329B8E971004BD4EC /* ContentView.swift */; };
 		0F49F62629B8E976004BD4EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F49F62529B8E976004BD4EC /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1C2E8529BCA8AB0083BD78 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		0F49F61E29B8E971004BD4EC /* CoffeeMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F49F62129B8E971004BD4EC /* CoffeeMastersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMastersApp.swift; sourceTree = "<group>"; };
 		0F49F62329B8E971004BD4EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		0F49F62029B8E971004BD4EC /* CoffeeMasters */ = {
 			isa = PBXGroup;
 			children = (
+				0F1C2E8529BCA8AB0083BD78 /* Offer.swift */,
 				0F49F62129B8E971004BD4EC /* CoffeeMastersApp.swift */,
 				0F49F62329B8E971004BD4EC /* ContentView.swift */,
 				0F49F62529B8E976004BD4EC /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1C2E8629BCA8AB0083BD78 /* Offer.swift in Sources */,
 				0F49F62429B8E971004BD4EC /* ContentView.swift in Sources */,
 				0F49F62229B8E971004BD4EC /* CoffeeMastersApp.swift in Sources */,
 			);
