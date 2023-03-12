@@ -10,24 +10,44 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        EmptyView()
+        TabView{
+            MenuPage()
+                .tabItem {
+                    Image(systemName: "cup.and.saucer")
+                    Text("Menu")
+                }
+            OffersPage()
+                .tabItem {
+                    Image(systemName: "tag")
+                    Text("Offers")
+                }
+            OrdersPage()
+                .tabItem {
+                    Image(systemName: "cart")
+                    Text("Order")
+                }
+            InfoPage()
+                .tabItem {
+                    Image(systemName: "info")
+                    Text("Info")
+                }
+        }
     }
 }
 
 
-
-//struct Greeting: View {
-//    //this is equivalent to a state variable
-//    @State var name = "unnamed"
-//    var body: some View{
-//        VStack {
-//            //the dollar sign is used for double binding -- you read and write
-//            TextField("Enter your name: ", text: $name)
-//            //no dollar sign because you only read the value
-//            Text("Hello \(name)")
-//        }
-//    }
-//}
+struct Greeting: View {
+    //this is equivalent to a state variable
+    @State var name = "unnamed"
+    var body: some View{
+        VStack {
+            //the dollar sign is used for double binding -- you read and write
+            TextField("Enter your name: ", text: $name)
+            //no dollar sign because you only read the value
+            Text("Hello \(name)")
+        }
+    }
+}
 
 
 
