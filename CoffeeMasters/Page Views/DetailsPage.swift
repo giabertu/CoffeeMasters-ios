@@ -12,6 +12,9 @@ struct DetailsPage: View {
     var product: Product
     @EnvironmentObject var cartManager: CartManager
     
+    //inject dependency from the system app runs on:
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationView{
             ScrollView {
@@ -44,6 +47,7 @@ struct DetailsPage: View {
                 
                 Button("Add \(quantity) to Cart"){
                     cartManager.add(product: product, quantity: quantity)
+                    dismiss()
                 }
                 .padding()
                 .frame(width: 250.0)

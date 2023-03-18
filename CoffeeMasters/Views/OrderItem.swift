@@ -21,10 +21,13 @@ struct OrderItem: View {
             Text("\(item.1)x")
             Text(item.0.name)
             Text("$ \(Double(item.1)*item.0.price, specifier: "%.2f")")
+            
+            //how to specify icon?
             Image(systemName: "trash")
                 .font(.title)
                 .foregroundColor(Color("Secondary"))
                 .padding()
+            
                 //how do you add tap listeners on views that are not buttons?
                 .onTapGesture {
                     cartManager.remove(product: item.0)

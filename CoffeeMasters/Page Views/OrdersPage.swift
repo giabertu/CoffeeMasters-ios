@@ -18,6 +18,7 @@ struct OrdersPage: View {
     @EnvironmentObject var cartManager: CartManager
     
     
+    
     var body: some View {
         
         NavigationView {
@@ -49,8 +50,8 @@ struct OrdersPage: View {
                             Spacer()
                             Text("Total")
                             Spacer()
-                            //                               Text("$ \(cartManager.total(), specifier: "%.2f")")
-                            //                                   .bold()
+                            Text("$ \(cartManager.total(), specifier: "%.2f")")
+                            .bold()
                             Spacer()
                         }
                     }.listRowBackground(Color.clear)
