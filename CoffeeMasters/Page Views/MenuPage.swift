@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct MenuPage: View {
+    
+    //no need to create an instance of it!
+    @EnvironmentObject var menuManager: MenuManager
+    
     var body: some View {
         NavigationView{
             List{
-                ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    NavigationLink {
-                        //render DetailsPage()
-                        DetailsPage()
-                    } label: {
-                        //click on ProductItem()
-                        ProductItem()
-                    }
+                
+                //loop through menu array inside manager
+                ForEach(menuManager.menu) { category in
+                    Text(category.name)
+                    
+                    ForEach(category.products) { product in
+                        NavigationLink {
+                            //render DetailsPage()
+                            DetailsPage()
+                        } label: {
+                            //click on ProductItem()
+                            ProductItem(product: product)
+                        }
 
-                    ProductItem()
+                    }
+                    
+                    ProductItem(product: Product(id: 1, name: "Dummy Product", description: "This is a good description", price: 4.25))
                 }
             }.navigationTitle("Products")
         }
@@ -30,5 +41,6 @@ struct MenuPage: View {
 struct MenuPage_Previews: PreviewProvider {
     static var previews: some View {
         MenuPage()
+            .environmentObject(MenuManager())
     }
 }
