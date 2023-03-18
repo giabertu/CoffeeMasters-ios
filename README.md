@@ -1,7 +1,7 @@
 # CoffeeMasters-ios
 
 Hey! Thanks for checking out this project. 
-I wrote this app following along the iOS App Development with Swift course on Frontend Masters. 
+I wrote this app following along the [iOS App Development with Swift](https://frontendmasters.com/courses/swift-ios/) course on Frontend Masters. 
 
 ## Screenshots
 <div style="display: flex">
